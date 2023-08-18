@@ -34,15 +34,15 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-bold">Triangle</h2>
-              <p>Area (A) = w x l</p>
+              <p>Area (A) = 0.5 x b x h</p>
 
               <div class="mt-3 mb-3">
-                <input class="w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
-                <input class="ml-3 w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
+                <input class="w-14 bg-gray-200 pl-2" type="number" name="" id="input1"> cm
+                <input class="ml-3 w-14 bg-gray-200 pl-2" type="number" name="" id="input2"> cm
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" id="btn" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-bold">Parallelogram</h2>
-              <p>Area (A) = w x l</p>
+              <p>Area (A) = b x h</p>
 
               <div class="mt-3 mb-3">
                 <input class="w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
@@ -80,7 +80,7 @@
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-bold">Rhombus</h2>
-              <p>Area (A) = w x l</p>
+              <p>Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
 
               <div class="mt-3 mb-3">
                 <input class="w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
@@ -99,7 +99,7 @@
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-bold">Pentagon</h2>
-              <p>Area (A) = w x l</p>
+              <p>Area (A) = 0.5 x p x b</p>
 
               <div class="mt-3 mb-3">
                 <input class="w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
@@ -118,7 +118,7 @@
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-bold">Ellipse</h2>
-              <p>Area (A) = w x l</p>
+              <p>Area (A) = πab</p>
 
               <div class="mt-3 mb-3">
                 <input class="w-14 bg-gray-200 pl-2" type="number" name="" id=""> cm
@@ -137,7 +137,7 @@
               </div>
 
               <div class="card-actions w-full">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateArea(this)" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
       </div>
       <!-- right side: Area calculation part -->
       <div>
-        <div class="w-full p-3 border border-solid border-black">
+        <div class="w-full min-h-[500px] p-7 border border-solid border-black">
           <h3 class="min-w-max font-semibold text-2xl underline text-center">Area Calculation</h3>
         </div>
       </div>
@@ -153,7 +153,7 @@
     <!-- main body Ends-->
 
   </main>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
