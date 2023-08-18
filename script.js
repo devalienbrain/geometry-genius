@@ -27,7 +27,7 @@ function findArea(shapesTitle, input1, input2) {
   }
   return area;
 }
-
+let i = 0;
 function calculateArea(event) {
   // getInputValuesFromField(event);
 
@@ -41,4 +41,10 @@ function calculateArea(event) {
 
   const area = findArea(shapesTitle, input1, input2);
   console.log(area);
+
+  const resContainer = document.getElementById('res-container');
+  const res = document.createElement('p');
+
+  res.innerHTML = `${++i}. ${shapesTitle} ${area}cm<button class="btn btn-success">Convert</button>`;
+  resContainer.appendChild(res);
 }
